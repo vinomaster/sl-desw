@@ -1,6 +1,6 @@
 # Slide Deck Instructions
 
-Optionally, you can follow these steps (provided by (Matt Corkum](https://github.com/mattcorkum) to render the workshop slide deck using boot2docker.  
+Optionally, you can follow these steps (provided by [Matt Corkum](https://github.com/mattcorkum)) to render the workshop slide deck using boot2docker.  
 
 
 ## Install boot2docker  
