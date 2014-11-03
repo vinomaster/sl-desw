@@ -1,0 +1,4 @@
+bottle==0.11.6
+gunicorn==18.0
+requests==2.1.0
+git+https://github.com/elasticsearch/elasticsearch-py.git#egg=elasticsearch

@@ -1,0 +1,10 @@
+/* CSS File
+ */
+body {
+    padding-top: 70px;
+}
+
+.alert {
+    margin-bottom: 0;
+    padding: 5px;
+}
