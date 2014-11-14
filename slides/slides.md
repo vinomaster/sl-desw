@@ -699,8 +699,8 @@ We will prime the pump with content from [Shakespeares Sonnets in Json Format](h
 * Take a peak at source code
 	* ~/es-webapp/webapp/server.py
 * Take note of the container environment variables
-	* sldesw_ES_ADDR
-	* sldesw_ES_PORT
+	* SLDESW_ES_ADDR
+	* SLDESW_ES_PORT
 	
 ---
 
@@ -763,8 +763,8 @@ RUN wget https://raw.github.com/pypa/pip/master/contrib/get-pip.py
 RUN python get-pip.py
 RUN pip install bottle==0.11.6 gunicorn==18.0 requests==2.1.0
 RUN pip install elasticsearch
-ENV sldesw_ES_ADDR 192.168.1.10
-ENV sldesw_ES_PORT 9200
+ENV SLDESW_ES_ADDR 192.168.1.10
+ENV SLDESW_ES_PORT 9200
 ADD webapp /webapp
 EXPOSE 8080
 WORKDIR /webapp
@@ -792,8 +792,8 @@ $ ES=$(docker run -P -d --name \
 $ docker ps
 $ docker logs <random_container_name>
 $ APP=$(docker run -d -p 8080:8080  --link elasticsearch:es \
-	--name sonnetsearch -e sldesw_ES_ADDR=184.173.163.109  \
-	-e sldesw_ES_PORT=49154 sldesw/sonnetsearch)
+	--name sonnetsearch -e SLDESW_ES_ADDR=184.173.163.109  \
+	-e SLDESW_ES_PORT=49154 sldesw/sonnetsearch)
 $ docker logs sonnetsearch
 $ docker ps
 ```
