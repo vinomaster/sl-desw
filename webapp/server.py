@@ -16,8 +16,8 @@ DOC_TYPE='sonets'
 # build connection pool using container environment variables
 # for ElasticSearch application.
 ES_NODE = {
-    		'host': os.environ.get('BCSMDCW_ES_ADDR'),
-    		'port': os.environ.get('BCSMDCW_ES_PORT')
+    		'host': os.environ.get('SLDESW_ES_ADDR'),
+    		'port': os.environ.get('SLDESW_ES_PORT')
 }
 
 es = elasticsearch.Elasticsearch([ES_NODE])
