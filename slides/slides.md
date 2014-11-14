@@ -45,14 +45,13 @@
 * SSH Key for the Workshop preinstalled
 * Preconfiguration of ~/.ssh/config
 
-### Configure SSH
-   
+
 ```bash
-    Host sl-docker-workshop
-        HostName <ip_for_studentID>
-        User root
-        IdentityFile <your_path>/sl_bcs_meetup.pem
-        IdentitiesOnly yes
+        Host sl-docker-workshop
+                HostName <ip_for_studentID>
+                User root
+                IdentityFile <your_path>/sl_bcs_meetup.pem
+                IdentitiesOnly yes
 ```
 -
 
